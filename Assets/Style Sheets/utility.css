@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Sanchez&display=swap');
+
+:root {
+    --blue1: #191D88;
+    --blue2: #1450A3;
+    --blue3: #337CCF;
+    --yellow: #FFC436;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+span {
+    color: var(--yellow);
+}
+
+ul{
+    list-style: none;
+}
+
+.btn{
+    color: #f1f1f1;
+    padding: 0.75rem;
+    text-transform: uppercase;
+    margin: 1.5rem;
+    border: 0.2rem solid var(--yellow);
+    letter-spacing: 0.2rem;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    min-width: 12rem;
+    text-align: center;
+}
+
+.btn:hover{
+    background-color: var(--yellow);
+    color: black;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    background-color: var(--yellow); 
+}
+
+.navbar span{
+    color: var(--blue1)
+}
+.navbar .left-con{
+    display: flex;
+    align-items: center;
+    padding: 0.25rem;
+}
+
+.navbar .left-con .icon{
+    height: 2.5rem;
+    padding: 0.25rem;
+}
+
+.navbar .left-con .title{
+    text-align: center;
+    padding: 0 0.25rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: 'Sanchez', serif;
+    font-weight: bold;
+}
+
+.navbar .right-con ul{
+    display: flex;
+    padding: 0.25rem;
+}
+
+.navbar .right-con ul li a{
+    padding: 0 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar .right-con ul li a:hover {
+    color: white;
+}
+
+
+
+/* Media Query */
+
+@media (max-width: 950px) {
+
+    .navbar .left-con .title {
+        font-size: 1.25rem;
+    }
+
+    .navbar .right-con ul li a {
+        font-size: 1.25rem;
+    }
+}
+
+
